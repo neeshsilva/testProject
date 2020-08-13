@@ -5,7 +5,8 @@ import {
   USER_LOGGED_IN,
   USER_LOGGED_OUT,
   USER_LOGGING_SUCCESS,
-  FORCE_LOGOUT_USER
+  FORCE_LOGOUT_USER,
+  REGISTER_DEVICE
 } from "../../actionTypes";
 
 const initState = {

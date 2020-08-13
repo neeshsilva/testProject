@@ -3,7 +3,8 @@ import {
   USER_LOGGING_SUCCESS,
   USER_INVALID_CREDENTIALS,
   USER_LOGGED_OUT,
-  FORCE_LOGOUT_USER
+  FORCE_LOGOUT_USER,
+  REGISTER_DEVICE,
 } from "../../actionTypes";
 
 export const login = data => ({
@@ -29,3 +30,5 @@ export const forceLogout = data => ({
   type: FORCE_LOGOUT_USER,
   data
 });
+
+// export const

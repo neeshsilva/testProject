@@ -8,10 +8,11 @@ import {
 } from "react-native";
 import { Button } from "react-native-elements";
 import { styles } from "./LoginStyle";
-import connect from "react-redux/es/connect/connect";
+import {connect} from "react-redux";
 import { login } from "../actions/loginLogoutActions";
 import Toast from "react-native-root-toast";
 import { TYPE_RETAILER } from "../../utils/constants";
+// import {fcmService} from '../../FCMService/FCMService';
 
 const LOGIN_IMAGE_URL = require("../../../assets/login_background.png");
 const LOGIN_IMAGE_URL2 = require("../../../assets/login_background_2.png");
@@ -28,6 +29,48 @@ class Login extends Component {
     correctPassword: true,
     visibleToast: true
   };
+
+  // componentDidMount(){
+  //
+  // }
+
+  // onRegister(token) {
+  //   console.log('[NotificationFCM] onRegister: ', token);
+  // }
+  //
+  // onNotification(notify) {
+  //   console.log('[NotificationFCM] onNotifications: ', notify);
+  //   const channelObj = {
+  //     channelId:"SampleChannelID",
+  //     channelName:"SampleChannelName",
+  //     channelDes:"SampleChannelDes"
+  //   };
+  //
+  //   // const channel = fcmService.buildChannel(channelObj);
+  //
+  //   const buildNotify = {
+  //     notificationId:notify._notificationId,
+  //     title:notify._title,
+  //     content:notify._body,
+  //     sound:"default",
+  //     channel:channel,
+  //     channelId:channelObj.channelID,
+  //     data:{},
+  //     colorBgIcon:"#1A243B",
+  //     largeIcon:'ic_launcher',
+  //     smallIcon:'ic_launcher',
+  //     vibrate:true
+  //   };
+  //
+  //   const notification = fcmService.buildNotification(buildNotify);
+  //   fcmService.displayNotification(notification);
+  //
+  // }
+  //
+  // onOpenNotification(notify) {
+  //   // console.log('[NotificationFCM] onOpenNotifications: ', notify._body);
+  //   alert("Open Notification: "+notify._body)
+  // }
 
   componentDidUpdate() {
     if (this.props.loginSuccess) {
@@ -68,6 +111,11 @@ class Login extends Component {
           type: TYPE_RETAILER
         }
       };
+      // fcmService.register(
+      //     this.onRegister,
+      //     this.onNotification,
+      //     this.onOpenNotification,
+      // );
       this.props.login(data);
       this.setState({
         userName: null,

@@ -17,6 +17,7 @@ import {
   CHANGE_TO_PICK_UP,
   FORCE_LOGOUT_USER
 } from "../../actionTypes";
+import {requestOrders} from '../actions/orderActions';
 
 const initState = {
   requestingOrders: false,
@@ -35,19 +36,20 @@ const initState = {
 export default function orderReducer(state = initState, action) {
   switch (action.type) {
     case CHANGE_FILTERING_STATE:
+      // console.log("HEHEHEHEHHE",action.data);
       return {
         requestingOrders: false,
         orders: null,
         errorMessage: null,
         orderLength: 0,
         previouseOrders: [],
-        filteringState: ["PENDING"],
+        // filteringState: ["PENDING"],
         requestOrderSuccess: false,
         previouseLength: 0,
         updatingOrder: false,
-        refreshing: false,
+        refreshing: true,
         validSecretCode: "",
-        filteringState: action.data
+        filteringState: action.data,
       };
     case REQUEST_ORDERS:
       return {

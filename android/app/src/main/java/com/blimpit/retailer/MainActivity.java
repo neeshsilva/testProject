@@ -1,4 +1,4 @@
-package com.testproject;
+package com.blimpit.retailer;
 
 import com.facebook.react.ReactActivity;
 

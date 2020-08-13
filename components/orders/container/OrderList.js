@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import { styles } from "./OrderStyle";
 import OrderListItem from "./OrderListItem";
-import connect from "react-redux/es/connect/connect";
+import {connect} from "react-redux";
 import { requestOrders, refreshOrder } from "../../orders/actions/orderActions";
 
 const ORDER_COUNT = 10;
@@ -21,7 +21,8 @@ class OrderList extends PureComponent {
   state = {
     skipItems: 0,
     totalOrders: [],
-    initialLoading: true
+    initialLoading: true,
+    filteringStat:'PENDING'
   };
 
   initializeOrders = token => {
@@ -43,6 +44,7 @@ class OrderList extends PureComponent {
   }
 
   refresh = (filteringStates = this.props.filteringState) => {
+    // console.log("jjjjjj",this.props.filteringState);
     let data = {
       skip: 0,
       limit: ORDER_COUNT,
@@ -59,7 +61,7 @@ class OrderList extends PureComponent {
   loadOrders(obj) {
     if (
       this.props.orderLength >= ORDER_COUNT &&
-      this.props.orderLength != this.props.previouseLength
+      this.props.orderLength !== this.props.previouseLength
     ) {
       let data = {
         skip: this.state.skipItems,
@@ -85,6 +87,7 @@ class OrderList extends PureComponent {
   };
 
   getOrder = (item, navigation) => {
+    // console.log("Items",item);
     if (item.date) {
       return <Text style={styles.orderDateItem}>{item.date}</Text>;
     } else {
@@ -112,6 +115,7 @@ class OrderList extends PureComponent {
 
     {
       if (this.props.requestingOrders && this.state.initialLoading) {
+        // console.log("HHHHHHHHHHHHHHHHHHHHH");
         lowerContainer = (
           <View style={styles.orderListSpinner}>
             <ActivityIndicator size="large" color="#2790D3" />
@@ -119,6 +123,7 @@ class OrderList extends PureComponent {
           </View>
         );
       } else if (this.props.orders === null || this.props.orders.length == 0) {
+        // console.log("fffffffffffffffffffffff");
         lowerContainer = (
           <View style={{ display: "flex", flexDirection: "column" }}>
             <ImageBackground style={styles.imageBackNoOrders}>
@@ -133,6 +138,7 @@ class OrderList extends PureComponent {
           </View>
         );
       } else {
+        // console.log("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
         lowerContainer = (
           <FlatList
             data={this.props.orders}

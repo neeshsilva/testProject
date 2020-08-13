@@ -19,6 +19,9 @@ export const styles = StyleSheet.create({
     fontWeight: "700",
     marginBottom: hp("2%")
   },
+  orderState:{
+
+  },
   stateIdentifierText: {
     color: "#7C7C7C",
     fontSize: 14,

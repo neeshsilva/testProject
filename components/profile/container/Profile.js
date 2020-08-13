@@ -7,11 +7,12 @@ import {
   View
 } from "react-native";
 import { styles } from "./ProfileStyle";
-import connect from "react-redux/es/connect/connect";
+import {connect} from "react-redux";
 import { logOut } from "../../login_logout/actions/loginLogoutActions";
 import { requestProfile } from "../actions/profileActions";
 import profileEmail from "../../../assets/profileEmail.png";
 import placeholder from "../../../assets/placeholder.png";
+// import {fcmService} from '../../FCMService/FCMService';
 // import requireLogin from "../../utils/requireLogin";
 
 class Profile extends Component {
@@ -23,6 +24,7 @@ class Profile extends Component {
   }
 
   logOutFn = () => {
+    // fcmService.deleteToken();
     this.props.logOut();
     this.props.navigation.navigate("Login");
   };

@@ -21,10 +21,13 @@ import {
 import orderAPI from "../service/orderService";
 
 function* requestOrders(data) {
+  // console.log("DATAAAA",data.data);
   try {
     let result = yield call(orderAPI.app.getOrders, data.data);
+    // console.log("RESULTS",result);
     yield put(requestOrderSuccess(result));
   } catch (error) {
+    console.log("error",error);
     yield put(requestOrderFailed(error));
   }
 }
@@ -127,6 +130,10 @@ function* changeToDispatchedState({ data }) {
   } catch (error) {
     yield put(errorChangingState(error));
   }
+}
+
+function* changingFilteringState(data) {
+  console.log("Filtering State");
 }
 
 function* changeToPickUpState({ data }) {

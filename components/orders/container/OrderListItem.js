@@ -7,7 +7,7 @@ import {
 import { styles } from "./OrderStyle";
 import Order from "./Order";
 import Swipeout from "react-native-swipeout";
-import connect from "react-redux/es/connect/connect";
+import {connect} from "react-redux";
 import {
   attendOrder,
   closeOrder,

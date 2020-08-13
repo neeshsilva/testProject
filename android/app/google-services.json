@@ -1,0 +1,151 @@
+{
+  "project_info": {
+    "project_number": "6003316051",
+    "firebase_url": "https://blimpitlogin.firebaseio.com",
+    "project_id": "blimpitlogin",
+    "storage_bucket": "blimpitlogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6003316051:android:88a61de4d9128c29ea7da6",
+        "android_client_info": {
+          "package_name": "com.blimpit.hybrid_private_user_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6003316051-ufrm11hgiamjng8m26m4219073pdmn7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9fzuLqeIBTxMCIyiy6zEiNs4Ex011g7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6003316051-ufrm11hgiamjng8m26m4219073pdmn7c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "6003316051-sdua8u976a7au846a8a9jfc7pgubngoj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blimpit.hybridPrivateUserClient"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6003316051:android:cd2539827e5feb07ea7da6",
+        "android_client_info": {
+          "package_name": "com.blimpit.retailer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6003316051-ufrm11hgiamjng8m26m4219073pdmn7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9fzuLqeIBTxMCIyiy6zEiNs4Ex011g7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6003316051-ufrm11hgiamjng8m26m4219073pdmn7c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "6003316051-sdua8u976a7au846a8a9jfc7pgubngoj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blimpit.hybridPrivateUserClient"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6003316051:android:c6d152c4604b3baf",
+        "android_client_info": {
+          "package_name": "com.example.hybrid_private_user_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6003316051-4dnbj045kbtmdtligorehnkch9uo6fp2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hybrid_private_user_client",
+            "certificate_hash": "5cdc069dea3905d739e3b5f2151826b745162b9f"
+          }
+        },
+        {
+          "client_id": "6003316051-og60ffi7q17r353u2lat46tm4n9bvi7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hybrid_private_user_client",
+            "certificate_hash": "c1db24814914ccbbae7334e68f7056e92b4c15cc"
+          }
+        },
+        {
+          "client_id": "6003316051-3csdod8vdkj50c03uminhe3r7cat4qoa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hybrid_private_user_client",
+            "certificate_hash": "d4dd02ddfe5b4b4c3f3c64713ef2c88ffe13835e"
+          }
+        },
+        {
+          "client_id": "6003316051-maj834rnu39l14uasdlk0jfro9jmsrrb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hybrid_private_user_client",
+            "certificate_hash": "2e16aae5c13df0c5eefba3b4156a0cb12e3b0a02"
+          }
+        },
+        {
+          "client_id": "6003316051-ufrm11hgiamjng8m26m4219073pdmn7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9fzuLqeIBTxMCIyiy6zEiNs4Ex011g7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6003316051-ufrm11hgiamjng8m26m4219073pdmn7c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "6003316051-sdua8u976a7au846a8a9jfc7pgubngoj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blimpit.hybridPrivateUserClient"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

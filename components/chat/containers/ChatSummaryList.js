@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import connect from "react-redux/es/connect/connect";
+import {connect} from "react-redux";
 import withUser from "./HOCs/withUser";
 
 import { ActivityIndicator, FlatList, Text, View } from "react-native";

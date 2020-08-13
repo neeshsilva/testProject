@@ -1,7 +1,9 @@
 export const BACKENDPATH = "/server/";
 // export const BASE_URL = "https://www.qa.blimpit.com";
 //export const BASE_URL = " https://www.blimpit.com";
-export const BASE_URL = "http://18.222.179.220:8080";
+// export const BASE_URL = "http://18.222.179.220:8080";
+export const BASE_URL = "http://localhost:8080";
+// export const BASE_URL = "http://18.188.25.21:8080";
 export const TYPE_RETAILER = "retailer";
 export const FIREBASE_TOKEN = "FIREBASE_TOKEN";
 export const USER_ID = "USER_ID";
