@@ -19,7 +19,7 @@
     "expo": "^37.0.9",
     "expo-permissions": "^8.1.0",
     "firebase": "^7.14.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.25.3",
     "react": "^16.11.0",
     "react-dom": "^16.8.6",
